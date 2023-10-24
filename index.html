@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premsingh- Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;  
+            color: white;
+            font-family: 'Poppins', sans-serifserif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(28 167 239 / 77%);
+            height: 90px;
+        }
+
+        nav ul {
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: black;
+            font-size: 1.2rem;
+        }
+
+        .left {
+            font-size: 1.8rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 110px 0px;
+            align-items: center;
+            /* background-color: aqua; */
+        }
+
+        .leftSection {
+            /* background-color: red; */
+            font-size: 3rem;
+            margin: 80px 0px;
+        }
+
+        .rightSection {
+            /* background-color: red; */
+            width: 80%;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .color-name {
+            color: rgb(28 167 239 / 77%);
+        }
+
+        #element {
+            color: rgb(28 167 239 / 77%);
+        }
+
+        /* -------Experience----- */
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .secondSection h1 {
+            font-size: 1.6rem;
+        }
+
+        main hr {
+            border: 0;
+            height: 1.2px;
+            background: rgb(28 167 239 / 77%);
+            margin: 30px 80px;
+        }
+
+        .heading {
+            color: rgb(239 28 147 / 50%);
+        }
+
+        .Education-details {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .Education {
+            /* border: 1px solid red; */
+            margin: 20px;
+        }
+
+        /* ---------Skills-------- */
+        .thirdSection {
+            margin: auto;
+            max-width: 80vw;
+        }
+
+        .thirdSection h1 {
+            font-size: 1.6rem;
+        }
+
+        #skills {
+            display: flex;
+            padding: 30px 0px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            /* margin-top: 50px; */
+        }
+
+        #skills div {
+            background-color: #262626;
+            padding: 30px;
+            font-size: 13px;
+            font-weight: 300;
+            border-radius: 10px;
+            transition: background 0.5s, transform 0.5s;
+        }
+
+        #skills div h2 {
+            font-size: 20px;
+            font-weight: 500px;
+            margin-bottom: 15px;
+        }
+        /* -------Projects------ */
+        .projectSection{
+            margin: auto;   
+            max-width: 80vw;
+
+        }
+        .projectSection h1{
+            font-size: 1.6rem;
+        }
+        .projects{
+            display: flex;
+            padding: 30px 0px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+        }
+
+        .projects>div {
+            background-color: #262626;
+            padding: 30px;
+            font-size: 13px;
+            font-weight: 300;
+            width: 33%;
+            border-radius: 10px;
+            transition: background 0.5s, transform 0.5s;
+        }
+        .projects div h4 {
+            font-size: 20px;
+            font-weight: 500px;
+            margin-bottom: 15px;
+            color: #de1515;
+        }
+        .projects div h4 a{
+            /* text-decoration: none; */
+            color: rgb(21, 0, 255);
+        }
+/* ----------Contact Details------------ */
+        .contactSection{
+            margin: auto;   
+            max-width: 80vw;
+
+        }
+        .row{
+            display: flex;
+        }
+        .contactSection h1{
+            font-size: 1.6rem;
+        }
+        .contact-left{
+            /* flex-basis: 35%; */
+            margin: 20px;
+
+        }
+        .contact-left p{
+            margin: 20px;
+        }
+        .socialicons i{
+            color: #de1515;
+        }
+        .contact-right{
+            flex-basis: 60%;
+            
+        }
+        .contact-right form{
+            width: 100%;
+
+        }
+        form input, form textarea{
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: #262626;
+            padding: 15px;
+            margin: 10px 0px;
+            font-size: 18px;
+            border-radius: 6px;
+            color: #fff;
+        }
+        .socialicons a{
+            text-decoration: none;
+            font-size: 30px;
+            margin-right: 15px;
+            color: rgb(233, 16, 16);
+            display: inline-block;
+
+        }
+        form #btn{
+            background-color: rgb(28 167 239 / 77%);
+            padding: 14px 60px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .copyright{
+            width: 100%;
+            text-align: center;
+            padding: 25px;
+            background: #262626;
+            font-weight: 100;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> <b>Prem's</b> Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About Me</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact details</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection"> Hi..., My name is
+                <span class="color-name"><i>Bardaval Premsingh</i>
+                </span>
+                <div> and I am a Passionate <span id="element"></span></div>
+            </div>
+            <div class="rightSection">
+                <img src="C:\Projects\Portfolio\Prem Pic.jpg" alt="Reload"
+                    style="width: 90%; border: 1px solid black; border-radius: 250px;">
+            </div>
+        </section>
+        <hr>
+        <!-- -------Experience-------- -->
+        <section class="secondSection">
+            <h1><span style="color: rgb(28 167 239 / 77%);">About Me</span></h1>
+            <h2> Experience</h2>
+            <div class="Experience" id="Experience">
+                <br>
+                <div class="companyName heading"> <b>LTIMindtree, Data Analytics Intern, </b> 20th Feb 2023 - 5th May
+                    2023</div>
+                <div> During this internship,learned the technologies like Java,Html, CSS, Python, NumPy, Pandas, DBMS,
+                    SQL,
+                    NoSql, MongoDB, DataWarehousing, BigData, Hadoop,MapReduce,Pyspark,Extract Transform
+                    Load(ETL),Basics of
+                    AWS,Azure, Data Visualization tool Power BI
+                </div>
+                <br>
+            </div>
+            <h2>Education details</h2>
+            <div class="Education-details">
+                <div class="edu-one Education">
+                    <h4 class="heading">
+                        Sreenidhi Institute of Science and Technology, 2019 - 2023
+                    </h4>
+                    <div>B.tech</div>
+                    <div>Electronics and Communication Engineering</div>
+                    <div>CGPA : 7.87/10</div>
+                </div>
+
+                <div class="edu-two Education">
+                    <h4 class="heading">
+                        SR Junior College, 2017 - 2019
+                    </h4>
+                    <div>Intermediate</div>
+                    <div>MPC</div>
+                    <div>Marks : 959/1000</div>
+                </div>
+            </div>
+            <!-- <div class="Education-details">
+                <div class=" collegeName heading">Sreenidhi Institute of Science and Technology, 2019 - 2023</div>
+                <div> B.tech, Electronics and Communication Engineering</div>
+                <div>CGPA- 7.87/10</div>
+                <div class=" collegeName heading">SR JUNIOR COLLEGE, 2017 - 2019</div>
+                <div> Intermediate, MPC</div>
+                <div>Marks- 959/1000</div>
+            </div> -->
+        </section>
+        <hr>
+        <!-- -----skills----- -->
+        <section class="thirdSection">
+            <h1><span style="color: rgb(28 167 239 / 77%);">Skills</span></h1>
+            <div class="skills" id="skills">
+                <div class="skill">
+                    <h2><span>Programming Languages</span></h2>
+                    <!-- <div> -->
+                        <ul>
+                            <li>Core Java</li>
+                            <li>Python3</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>Html</li>
+                            <li>CSS</li>
+                        </ul>
+                    <!-- </div> -->
+
+                </div>
+                <div class="skill">
+                    <h2><span> Data related Tech</span></h2>
+                    <ul>
+                        <li>Python3</li>
+                        <li>Pandas, Pandas</li>
+                        <li>SQL, MongoDB</li>
+                        <li>Data Extraction</li>
+                        <li>Data Cleaning</li>
+                        <li>Data Manipulation</li>
+                        <li>Extract Transform Load (ETL)</li>
+                        <li>Power BI</li>
+                        <li>Basics of Hadoop, Big Data</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h2><span>Others</span></h2>
+                    <ul>
+                        <li>Object Oriented Programming(Oops)</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Linux</li>
+                        <li>Git and GitHub</li>
+                        <li> Basics of AWS</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h2><span>Soft Skills</span></h2>
+                    <ul>
+                        <li>Excellent Communication Skills</li>
+                        <li>Problem SOlving</li>
+                        <li>Teamwork</li>
+                        <li>Critical thinking and Logical thinking</li>
+                        <li>Energitic</li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- -------Projects------- -->
+        <hr>
+        <section class="projectSection">
+            <h1><span style="color: rgb(28 167 239 / 77%);">Projects</span></h1>
+            <div class="projects">
+            <div class="project1">
+                <h4><a href="https://github.com/bardavalpremsingh415/IPL_data_analysis">Analyzing Indian players IPL 2023 Performance, for worldcup or oversear tours players selection</a></h4>
+                <ul>
+                    <li>Using Python Scraped all the IPL data from ESPN website</li>
+                    <li>Data Cleaning and Data Manipulation are done using pandas and Numpy</li>
+                    <li> Dashboard is created using Power BI</li>
+                </ul>
+            </div>
+            <div class="project2">
+                <h4><a href="https://github.com/bardavalpremsingh415/Commercial_Banking_system">Commercial Banking System</a></h4>
+                <div id="projectDescription">
+                    <ul>
+                        <li>Created a banking system web app with HTML, CSS, SQL, and PHP, 
+                            simulating core banking functions.
+                        </li>
+                        <li>
+                            Crafted user-friendly interface using HTML and CSS for seamless customer 
+                            interactions.
+                        </li>
+                        <li>
+                            Executed PHP backend for account creation, fund transfers, and transaction 
+                            history.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="project3">
+                <h4><a href="https://github.com/bardavalpremsingh415/Amazon_Clone_Website"> Amazon Clone website</a></h4>
+                <div id="projectDescription">
+                    <ul>
+                        <li>
+                            Designed Amazon shopping website.
+                        </li>
+                        <li>
+                            By using Html and CSS created Amazon clone.
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <!-- --------Contact details----------- -->
+        <hr>
+        <section class="contactSection">
+            <h1><span style="color: rgb(28 167 239 / 77%);">Contact Details</span></h1>
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <p>bardavalpremsingh6789@gmail.com</p>
+                        <p>19311a0415@sreenidhi.edu.in</p>
+                        <p><i class="fas fa-phone-square-alt"></i>+91 8074202411</p>
+                        <div class="socialicons">
+                            <a href=""><i class="fa-solid fa-envelope"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email">
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button id="btn" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <p class="copyright">Copyright © Bardaval Premsingh</p>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer', 'Data Analyst', ' Data Engineer.'],
+            typeSpeed: 70,
+        });
+    </script>
+</body>
+
+</html>
